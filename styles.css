@@ -1,0 +1,153 @@
+:root{
+    --maincolor : rgb(15, 15, 15);
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.consol{
+    width: 50rem;
+    height: 30rem;
+    background-color: var(--maincolor);
+    position: relative;
+    top: 9rem;
+    border: 2px solid gray;
+    border-radius: 8px;
+    transition: all 0.5s;
+}
+
+.consolshadow{
+    width: 50rem;
+    height: 30rem;
+    background-color: rgb(87, 86, 86);
+    border-radius: 6px;
+    position: absolute;
+    top: 1.2rem;
+    left: 1.8rem;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.consol:hover .consolshadow{
+    transform: scale(0.8);
+
+}
+
+.consol:hover{
+    border: 2px solid white;
+}
+.gris{
+    background-color: rgb(87, 86, 86);
+    width: 49.8rem;
+    height: 3rem;
+    border-radius: 6px 6px 0 0;
+}
+
+.user{
+    background-color: var(--maincolor);
+    width: 10rem;
+    height: 2.4rem;
+    position: relative;
+    top: 0.6rem;
+    left: 0.6rem;
+    border-radius: 5px 5px 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#username{
+    color: white;
+    font-family: Poppins, sans-serif;
+    padding: 0.5rem;
+}
+
+svg{
+    color: white;
+}
+.na{
+    color : green;
+    position: relative;
+    left: 0.5rem;
+    top: 1.5rem;
+}
+
+
+.na::after{
+    content: " >";
+    color : green;
+    font-family: poppins;
+    position: relative;
+    top: 0.15rem;
+    font-size: 1.1rem;
+}
+.rep{
+    margin-top: -1rem;
+    position: relative;
+    top : 0.7rem;
+}
+.nv{
+    position: relative;
+    top : 1.8rem;
+    left: 1rem;
+    margin: -1rem;
+}
+  
+
+.inputuser{
+    position: relative;
+    top : 0.2rem;
+    left : 8.5rem;
+    border: none;
+    background-color: var(--maincolor);
+    color: white;
+    font-family: serif;
+    outline: none;
+    width: fit-content;
+
+}
+
+h1{
+    color: white;
+    top: 3rem;
+    font-size: 2rem;
+    position: absolute;
+    left: 42rem;
+}
+
+.typewriter h1 {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid green; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing .8s steps(30, end),
+      blink-caret 1s step-end infinite;
+  }
+  
+  /* The typing effect */
+
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: green; }
+  }
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 13% }
+  }
